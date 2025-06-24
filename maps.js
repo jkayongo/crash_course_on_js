@@ -9,12 +9,12 @@ const softwareEngineers = new Map([
     ["Kyagulanyi", "Lead developer"]
 ]);
 console.log(softwareEngineers);
-console.log("...............................")
+console.log("...............................");
 console.log(softwareEngineers.get("Kylian"))
-console.log("...............................")
+console.log("...............................");
 console.log("the number of software engineers is: " + softwareEngineers.size);
 softwareEngineers.delete("Courtois");
-console.log("...............................")
+console.log("...............................");
 console.log(softwareEngineers);
 //looping through a map
 softwareEngineers.forEach(function(value, key){
@@ -38,4 +38,20 @@ console.log(scienceStudents);
 //the set() method can also be used to change existing Map values:
 scienceStudents.set("Chemistry", 95);
 console.log(scienceStudents);
+//objects as keys
+//create objects
+const apples = {nameOfFruit: "Apple"};
+const bananas = {nameOfFruit: "Bananas"};
+const oranges = {nameOfFruit: "Oranges"};
+//create a map
+const fruits = new Map();
+fruits.set(apples, 500);
+fruits.set(bananas, 200);
+fruits.set(oranges, 200);
+console.log("...............................");
+console.log(fruits);
+console.log("...............................");
+console.log(apples.nameOfFruit);
+
+
 
